@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetSamuelApoya</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5162af7913.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Career Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>mLearning Engineer and Software Developer</p>
+                <h1>Hi, I'm <span>Samuel</span> Apoya<br>Your're welcome to my website</h1>
+                <p class="quote">"Leadership in technology is the driving force for innovation." - Samuel Apoya</p>
+            </div>
+        </div>
+    </div>
+<!------------------------------about------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a computer science and economics student at Colby College,
+                    blending technical skills with economic theory. I'm learning to code,
+                    analyze data, and understand market dynamics. This interdisciplinary
+                    approach at a prestigious liberal arts college is preparing me for a 
+                    career at the intersection of technology and finance.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Automate software maintenance and Data Analytics</li>
+                            <li><span>Software Development</span><br>Design, maintain, and test Software</li>
+                            <li><span>Web evelopment</span><br>Designing web and app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Colby College (2023 - current)</span><br>Colby IT Support Services Intern</li>
+                            <li><span>Colby College (2023)</span><br>Orientation Leader</li>
+                            <li><span>Colby College Donor and Alumni Relations</span><br>Events Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Colby College (2022 - 2026)</span><br>Computer Science & Economics</li>
+                            <li><span>CodePath (2024)</span><br>Basics of software engineering</li>
+                            <li><span>Wall Street Prep (2024)</span><br>Financial Statement Modeling and DCF Modeling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------Services--------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Software developement</h2>
+                    <p>As a full-stack developer, my passion lies in crafting intelligent,
+                    data-driven applications that not only function flawlessly but also harness the 
+                    power of AI to deliver cutting-edge user experiences and business solutions.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-robot"></i>
+                    <h2>Machine Learning Engineer</h2>
+                    <p>I leverage SageMaker for MLOps, streamlining ML workflows with automation.
+                    I use Azure ML to empower my end-to-end machine learning projects with seamless integration.
+                    I use TensorFlow and Cloud TPUs in my distributed ML computations.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-building-columns"></i>
+                    <h2>Investment Banking</h2>
+                    <p>My passion for investment banking stems from a fascination with financial
+                    markets, the thrill of strategic transactions, and the opportunity to drive economic
+                    growth through innovative financial solutions
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------Portfolio------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/software.png">
+                    <div class="layer">
+                        <h3>Game Theory App</h3>
+                        <p>An application that teaches the basics of Game Theory.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ai.png">
+                    <div class="layer">
+                        <h3>Employment Feedback System</h3>
+                        <p>Enhances communication among workers.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/investment.png">
+                    <div class="layer">
+                        <h3>Chatbot</h3>
+                        <p>An AI-powered chatbot that can handle customer inquiries, provide support,
+                        and escalate issues to human agents when necessary.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--------------------------Contact------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sapoya26@colby.edu</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +1 (207) 660 7961</p>
+                    
+                    <div class="social-icons">
+                        <a href="linkedin.com/in/samuel-apoya-71882a223" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/samue_l01" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/p/CpGAz90ut__prWCVEDdBZsIBKY5W9P92Aj5-8o0/" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/samuel.apoya.50/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    
+                    <a href="images/Sam. Apoya Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Samuel. Made with <i class="fa-solid fa-heart"></i> by Samuel Apoya</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx00YVF4WMsbXBMyM8wrmBSOGQptTEHo4_5e_Cc5NbMOoS8-aiAid33-3U_GLdyDoa8/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message submitted successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
