@@ -207,6 +207,16 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
+        //---------------for small screens (hover)----------------
+        document.querySelectorAll('.services-list div').forEach((element) => {
+            element.addEventListener('touchstart', function() {
+                this.classList.add('hovered');
+            });
+            element.addEventListener('touched', function() {
+                this.classList.remove('hovered');
+            });
+        });
+        //--------------------------------------------------------
 
     </script>
     
