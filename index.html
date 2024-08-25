@@ -207,6 +207,10 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
+        //attach closemenu fucntion to all menu items
+        document.querySelectorAll('#sidemenu a').forEach((element) =>{
+            element.addEventListener('click', closemenu);
+        });
         //---------------for small screens (hover)----------------
         document.querySelectorAll('.services-list div').forEach((element) => {
             element.addEventListener('touchstart', function() {
