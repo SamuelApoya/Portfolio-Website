@@ -201,6 +201,11 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+/*---------rule for hover effects in small screens (serviceslist)*/
+.services-list div.hovered{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
 
 /*---------------------------------portfolio--------------------------*/
 #portfolio{
